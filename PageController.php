@@ -9,7 +9,7 @@ class PageController extends Controller
    public function home()
     {
         return view('home');
-    }/*
+    }
     public function news()
     {
         return view('404');
@@ -25,18 +25,21 @@ class PageController extends Controller
     public function projects()
     {
         return view('projects');
+    } public function organizers()
+    {
+        return view('organizers');
     }
     public function ourgames()
-    {
-        return view('ourgames');
+  {
+      return view('404');
+  }
+   public function registration()
+   {
+      return view('registration');
     }
-    public function registration()
-    {
-        return view('registration');
-    }
-    public function entrance()
-    {
+   public function entrance()
+   {
         return view('entrance');
-    }*/
+    }
 
 }

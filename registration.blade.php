@@ -4,10 +4,10 @@
         text-align: center;
     }
     section{
-        margin: 100px 650px;
+        margin: 70px 300px;
     }
     .reg{
-        font-size: 30px;
+        font-size: 20px;
     }
 </style>
 <header>

@@ -1,6 +1,6 @@
 <style>
     section{
-        margin: 100px 650px;
+        margin: 100px 350px;
     }
     h2{
         font-size: 60px;
@@ -9,6 +9,10 @@
     .members{
         text-align: center;
         font-size: 45px;
+    }
+    input::placeholder{
+        font-size: 20px;
+
     }
 </style>
 

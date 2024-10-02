@@ -5,14 +5,14 @@
     }
     nav{
         display: flex;
-        gap: 50px;
-        padding: 50px;
-        margin-left: 40px;
+        gap: 10px;
+        padding: 30px;
+        margin-left: 10px;
         border: 30px;
     }
     .news, .organizers, .about, .events, .projects, .ourgames, .registration, .entrance{
-        padding: 20px;
-        margin: 20px;
+        padding: 10px;
+        margin: 15px;
         background-color: #aba244;
         border-radius: 10px 30px;
         box-shadow: 0 0 0 rgba(0, 0, 0, 0);
