@@ -4,8 +4,7 @@
         color: white;
     }
     nav{
-        display: flex;
-        gap: 10px;
+
         padding: 30px;
         margin-left: 10px;
         border: 30px;
@@ -23,20 +22,25 @@
         background-color: #e59213;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
+
 </style>
 <header>
     <nav>
-
-        <div><a class="news" src="">Новости</a></div>
-        <div><a class="organizers" src="">Организаторы</a></div>
-        <div><a class="about" src="">О нас</a></div>
-        <div><a href="" class="events" src="">Мероприятия</a></div>
-        <div><img src="{{asset('img/Возрождение.png')}}" alt="<<ИРОО Возрождение>>" style="width: 300px; height: 100px;"></div>
-        <div><a class="projects" src="">Наши проекты</a></div>
-        <div><a class="ourgames" src="">Список Игр</a></div>
-        <div><a class="registration" src="">Регистрация</a></div>
-        <div><a class="entrance" src="">Вход</a></div>
-
+    <ul style="
+        display: flex;
+        gap: 9px;
+        list-style-type: none;
+        ">
+        <li><a href="{{url('/news')}}" class="news" src="">Новости</a></li>
+        <li><a href="{{url('/organizers')}}" class="organizers" src="">Организаторы</a></li>
+        <li><a href="{{url('/about')}}" class="about" src="">О нас</a></li>
+        <li><a href="{{url('/events')}}" class="events" src="">Мероприятия</a></li>
+        <li><img src="{{asset('img/Возрождение.png')}}" alt="<<ИРОО Возрождение>>" style="width: 300px; height: 100px;"></li>
+        <li><a href="{{url('/projects')}}" class="projects" src="">Наши проекты</a></li>
+        <li><a href="{{url('/ourgames')}}" class="ourgames" src="">Список Игр</a></li>
+        <li><a href="{{url('/registration')}}" class="registration" src="">Регистрация</a></li>
+        <li><a href="{{url('/entrance')}}" class="entrance" src="">Вход</a></li>
+        </ul>
     </nav>
 </header>
 

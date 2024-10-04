@@ -1,10 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Routing\Redirector;
+
+
+
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/404', function () {
+Route::get('/news', function () {
     return view('404');
 });
 Route::get('/about', function () {
@@ -20,14 +25,18 @@ Route::get('/organizers', function () {
     return view('organizers');
 });
 Route::get('/projects', function () {
-    return view('projects');
+    return view('404');
 });
 Route::get('/lk', function () {
     return view('lk');
 });
-
-
-Route::get('/lk', [UserProfileController::class, 'lk'])->middleware('auth')->name('Личный кабинет');
+Route::get('/events', function () {
+    return view('events');
+});
+Route::get('/ourgames', function () {
+    return view('404');
+});
+//Route::get('/lk', [UserProfileController::class, 'lk'])->middleware('auth')->name('Личный кабинет');
 
 //Route::get('/', [\App\Http\Controllers\PageController::class, 'home'])->name('home');
 //Route::get('/404', [\App\Http\Controllers\PageController::class, '404'])->name('404');
