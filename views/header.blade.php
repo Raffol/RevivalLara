@@ -4,14 +4,13 @@
         color: white;
     }
     nav{
-
         padding: 30px;
-        margin-left: 10px;
+        /*margin-left: 10px;*/
         border: 30px;
     }
     .news, .organizers, .about, .events, .projects, .ourgames, .registration, .entrance{
         padding: 10px;
-        margin: 15px;
+        margin: 10px;
         background-color: #aba244;
         border-radius: 10px 30px;
         box-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -35,7 +34,11 @@
         <li><a href="{{url('/organizers')}}" class="organizers" src="">Организаторы</a></li>
         <li><a href="{{url('/about')}}" class="about" src="">О нас</a></li>
         <li><a href="{{url('/events')}}" class="events" src="">Мероприятия</a></li>
-        <li><img src="{{asset('img/Возрождение.png')}}" alt="<<ИРОО Возрождение>>" style="width: 300px; height: 100px;"></li>
+        <li>
+{{--            <a href="{{url('home')}}">--}}
+            <img src="{{asset('img/Возрождение.png')}}" alt="<<ИРОО Возрождение>>" style="width: 300px; height: 100px;">
+{{--        </a>--}}
+        </li>
         <li><a href="{{url('/projects')}}" class="projects" src="">Наши проекты</a></li>
         <li><a href="{{url('/ourgames')}}" class="ourgames" src="">Список Игр</a></li>
         <li><a href="{{url('/registration')}}" class="registration" src="">Регистрация</a></li>

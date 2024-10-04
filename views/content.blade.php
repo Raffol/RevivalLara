@@ -78,11 +78,7 @@
     <section>
         <h2 id="ourmero" style="text-align: center; font-size: 50px;">Наши мероприятия</h2>
         <p style="text-align: center; font-size: 30px">Которые проходили за всё время</p>
-        <div style="display: flex; gap: 20px;">
-        <img src="{{asset('img/3I2A0557.jpg')}}" alt="" style="height: 500px; width: 700px;">
-        <img src="{{asset('img/3I2A0758.jpg')}}" alt="" style="height: 500px; width: 700px;">
-        <img src="{{asset('img/3I2A1587.jpg')}}" alt="" style="height: 500px; width: 700px;">
-        </div>
+        @include('imgslider')
         <br>
         <br>
         <table style="margin: 30px; padding: 20px">

@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Redirector;
 
-
+Route::get('/imgslider', function () {
+    return view('imgslider');
+});
 
 Route::get('/', function () {
     return view('home');
