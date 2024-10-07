@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Routing\Redirector;
 
 class PageController extends Controller
 {
@@ -24,8 +25,9 @@ class PageController extends Controller
     }
     public function projects()
     {
-        return view('projects');
-    } public function organizers()
+        return view('404');
+    }
+    public function organizers()
     {
         return view('organizers');
     }
