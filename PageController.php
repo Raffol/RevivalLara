@@ -46,4 +46,7 @@ class PageController extends Controller
     public function lk(){
        return view('lk');
     }
+    public function createnews(){
+       return view('createnews');
+    }
 }

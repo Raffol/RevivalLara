@@ -2,6 +2,10 @@
     body{
         text-align: center;
     }
+    section{
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
     table{
         text-align: center;
         margin-left: 100px;

@@ -18,13 +18,16 @@
 <section>
     <h2 id="ourmero" style="text-align: center; font-size: 50px;">Наши мероприятия</h2>
     <p style="text-align: center; font-size: 30px">Которые проходили за всё время</p>
-    <div style="display: flex; gap: 20px; ">
+
+    @include('imgslider')
+
+    {{--<div style="display: flex; gap: 20px; ">
         <img src="{{asset('img/3I2A0557.jpg')}}" alt="">
 
         <img src="{{asset('img/3I2A0758.jpg')}}" alt="">
 
         <img src="{{asset('img/3I2A1587.jpg')}}" alt="">
-    </div>
+    </div>--}}
     <br>
     <br>
     <table style="margin: 30px; padding: 20px; font-size: 24px;">
@@ -48,7 +51,6 @@
             <td>Межрегиональный открытый этнофест «II Нажарай буряад арадай наадан» («II Летние народные бурятские игры»)</td>
         </tr>
 </section>
-{{--
-<footer>
+
     @include('footer')
-</footer>--}}
+

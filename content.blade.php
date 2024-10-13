@@ -7,7 +7,7 @@
         border: 1px solid black;
     }
 </style>
-<main>
+<section>
     <h2 style="text-align: center; font-size: 50px">Новостная лента организации</h2>
     <section id="newsfeed" style="display: flex; gap: 15px; margin: 30px">
     <span id="firstnews" style="margin: 50px">
@@ -45,7 +45,7 @@
             - Проведение масштабного праздника.
         </p>
         <br>
-        <img src="" alt="">
+        <img style="height: 550px; width: 800px; margin-left: 265px" src="{{asset('img/kW-Jf8XYj6A.jpg')}}" alt="">
     </section>
     <hr style="color: #aba244">
     <section id="organizerss">
@@ -74,15 +74,12 @@
             <p style="font-size: 18px">Пресс-служба</p>
         </div>
     </section>
+
     <br>
     <section>
         <h2 id="ourmero" style="text-align: center; font-size: 50px;">Наши мероприятия</h2>
         <p style="text-align: center; font-size: 30px">Которые проходили за всё время</p>
-        <div style="display: flex; gap: 20px; ">
-        <img src="{{asset('img/3I2A0557.jpg')}}" alt="" style="height: 500px; width: 700px;">
-        <img src="{{asset('img/3I2A0758.jpg')}}" alt="" style="height: 500px; width: 700px;">
-        <img src="{{asset('img/3I2A1587.jpg')}}" alt="" style="height: 500px; width: 700px;">
-        </div>
+        @include('imgslider')
         <br>
         <br>
         <table style="margin: 30px; padding: 20px">
@@ -105,4 +102,6 @@
             <td>Организация выставки ИРОО "Возрождение" на Форуме "Сообщество"</td>
             <td>Межрегиональный открытый этнофест «II Нажарай буряад арадай наадан» («II Летние народные бурятские игры»)</td>
             </tr>
+        </table>
     </section>
+</main>

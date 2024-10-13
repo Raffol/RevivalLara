@@ -1,6 +1,5 @@
-<header>
-    @include('header')
-</header>
+ @include('header')
+
 
 <section style="margin: 55px">
     <h2 id="aboutus" style="text-align: center; font-size: 50px">О нас</h2>
@@ -17,9 +16,9 @@
         - Проведение масштабного праздника.
     </p>
     <br>
-    <img src="" alt="">
+    <img style="height: 550px; width: 800px; margin-left: 265px" src="{{asset('img/kW-Jf8XYj6A.jpg')}}" alt="">
 </section>
 
-<footer>
+
     @include('footer')
-</footer>
+

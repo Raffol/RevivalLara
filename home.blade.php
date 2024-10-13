@@ -1,6 +1,4 @@
-@php
-session_start()
- @endphp
+
 <!doctype html>
 <html lang="en">
 <head>
